@@ -3,7 +3,7 @@
 
 <img src="https://github.com/IllidanStormrage1/simpleWeatherAppKt/blob/master/Screenshots/photo_2020-02-04_21-51-47_pixel_really_blue_portrait.png" width="430"/> <img src="https://github.com/IllidanStormrage1/simpleWeatherAppKt/blob/master/Screenshots/photo_3_pixel_really_blue_portrait.png" width="430"/> 
 
-* please do not pay attention to the weather icon, this comes from the bekend (
+> Please do not pay attention to the weather icon, this comes from the bekend 😥
 
 # Overview
 Weather app created using the [Weather Api](https://weatherstack.com/quickstart).
