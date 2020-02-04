@@ -16,5 +16,6 @@ This is not supposed to be a production scale application, it is meant to demons
 ### General flow of data
 * Retrieve the latitude and longitude of the user.
 * Request data from Weather Api
-* If data received, cache it in internal file and show the updated data to user.
+* If data received, cache it in SharedPrefs and show the updated data to user.
 * If error then notify user about it.
+* To update, pull from top to bottom
