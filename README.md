@@ -11,7 +11,7 @@ This is not supposed to be a production scale application, it is meant to demons
 * Moxy
 * Retrofit
 
-##### Still if you have any issues or suggestions, please feel free an write in telegram [@zkv_2]("https://t.me/zkv_2")
+##### Still if you have any issues or suggestions, please feel free an write in telegram [@zkv_2](https://t.me/zkv_2)
 
 ### General flow of data
 * Retrieve the latitude and longitude of the user.
