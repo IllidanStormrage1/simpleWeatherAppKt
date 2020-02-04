@@ -10,4 +10,5 @@
     <string name="error_title">Error</string>
     <string name="wind_speed">Wind speed: %dk/h</string>
     <string name="cloud_cover">Overcast: %d%%</string>
+    <string name="weatherIcon">weatherIcon</string>
 </resources>

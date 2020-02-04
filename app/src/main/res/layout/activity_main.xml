@@ -28,8 +28,7 @@
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            tools:text="Yagodnaya Svoboda, Russia" />
+            app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
             android:id="@+id/textViewObservationTime"
@@ -40,10 +39,10 @@
             android:textSize="@dimen/textSizeSecondary"
             app:layout_constraintEnd_toEndOf="@id/textViewName"
             app:layout_constraintStart_toStartOf="@id/textViewName"
-            app:layout_constraintTop_toBottomOf="@id/textViewName"
-            tools:text="ObservationTime: 14:56 am" />
+            app:layout_constraintTop_toBottomOf="@id/textViewName" />
 
         <ImageView
+            android:contentDescription="@string/weatherIcon"
             android:id="@+id/imageViewWeatherIcon"
             android:layout_width="120dp"
             android:layout_height="120dp"
@@ -67,8 +66,7 @@
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="@id/textViewObservationTime"
-            app:layout_constraintVertical_bias="0.578"
-            tools:text="Heavy Snow, Blowing Snow, Heavy Rain And Snow" />
+            app:layout_constraintVertical_bias="0.578" />
 
         <TextView
             android:id="@+id/textViewTemperature"
@@ -81,8 +79,7 @@
             android:textSize="80sp"
             app:layout_constraintEnd_toEndOf="@id/textViewCurrent"
             app:layout_constraintStart_toStartOf="@id/textViewCurrent"
-            app:layout_constraintTop_toBottomOf="@id/textViewCurrent"
-            tools:text="0.0*c" />
+            app:layout_constraintTop_toBottomOf="@id/textViewCurrent" />
 
 
         <TextView
@@ -99,8 +96,7 @@
             app:layout_constraintHorizontal_chainStyle="spread"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textViewTemperature"
-            app:layout_constraintVertical_chainStyle="packed"
-            tools:text="Prsureввап: 14.0" />
+            app:layout_constraintVertical_chainStyle="packed" />
 
         <TextView
             android:id="@+id/textViewHumidity"
@@ -115,8 +111,7 @@
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toEndOf="@+id/textViewPressure"
             app:layout_constraintTop_toBottomOf="@+id/textViewTemperature"
-            app:layout_constraintVertical_chainStyle="packed"
-            tools:text="Obs: 1ввап56 am" />
+            app:layout_constraintVertical_chainStyle="packed" />
 
         <TextView
             android:id="@+id/textViewWindSpeed"
@@ -128,8 +123,7 @@
             android:textSize="@dimen/textSizeTertiary"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="@+id/textViewPressure"
-            app:layout_constraintTop_toBottomOf="@+id/textViewPressure"
-            tools:text="Obs: :56 amssssss" />
+            app:layout_constraintTop_toBottomOf="@+id/textViewPressure" />
 
         <TextView
             android:id="@+id/textViewCloudCover"
@@ -141,8 +135,7 @@
             android:textSize="@dimen/textSizeTertiary"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="@+id/textViewHumidity"
-            app:layout_constraintTop_toBottomOf="@+id/textViewHumidity"
-            tools:text="Obs: 14:56 ваываam" />
+            app:layout_constraintTop_toBottomOf="@+id/textViewHumidity" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
