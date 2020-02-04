@@ -3,6 +3,8 @@
 
 <img src="https://github.com/IllidanStormrage1/simpleWeatherAppKt/blob/master/Screenshots/photo_2020-02-04_21-51-47_pixel_really_blue_portrait.png" width="400"/> <img src="https://github.com/IllidanStormrage1/simpleWeatherAppKt/blob/master/Screenshots/photo_3_pixel_really_blue_portrait.png" width="400"/> 
 
+* please do not pay attention to the weather icon, this comes from the bekend (
+
 # Overview
 Weather app created using the [Weather Api](https://weatherstack.com/quickstart).
 This is not supposed to be a production scale application, it is meant to demonstrate the implementation of **MVP** architecture in Kotlin using following libraries:
