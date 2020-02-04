@@ -10,6 +10,8 @@ Weather app created using the [Weather Api](https://weatherstack.com/quickstart)
 This is not supposed to be a production scale application, it is meant to demonstrate the implementation of **MVP** architecture in Kotlin using following libraries:
 * Moxy
 * Retrofit
+* Glide
+* Kotlin coroutines
 
 ##### Still if you have any issues or suggestions, please feel free an write in telegram [@zkv_2](https://t.me/zkv_2)
 
