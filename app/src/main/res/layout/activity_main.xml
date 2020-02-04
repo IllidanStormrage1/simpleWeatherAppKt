@@ -42,10 +42,10 @@
             app:layout_constraintTop_toBottomOf="@id/textViewName" />
 
         <ImageView
-            android:contentDescription="@string/weatherIcon"
             android:id="@+id/imageViewWeatherIcon"
             android:layout_width="120dp"
             android:layout_height="120dp"
+            android:contentDescription="@string/weatherIcon"
             app:layout_constraintBottom_toTopOf="@id/textViewCurrent"
             app:layout_constraintEnd_toEndOf="@id/textViewObservationTime"
             app:layout_constraintStart_toStartOf="@id/textViewObservationTime"
