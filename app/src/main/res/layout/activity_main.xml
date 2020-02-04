@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.swiperefreshlayout.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/swipeRefresh"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:elevation="4dp"
+    app:swipeRefreshLayoutProgressSpinnerBackgroundColor="@color/colorBlack"
+    tools:context=".presentation.ui.MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/textViewName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:focusable="true"
+            android:fontFamily="sans-serif-light"
+            android:gravity="center"
+            android:paddingStart="@dimen/paddingTextView"
+            android:paddingEnd="@dimen/paddingTextView"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/textSizePrimary"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Yagodnaya Svoboda, Russia" />
+
+        <TextView
+            android:id="@+id/textViewObservationTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawablePadding="8dp"
+            android:fontFamily="sans-serif-light"
+            android:textSize="@dimen/textSizeSecondary"
+            app:layout_constraintEnd_toEndOf="@id/textViewName"
+            app:layout_constraintStart_toStartOf="@id/textViewName"
+            app:layout_constraintTop_toBottomOf="@id/textViewName"
+            tools:text="ObservationTime: 14:56 am" />
+
+        <ImageView
+            android:id="@+id/imageViewWeatherIcon"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            app:layout_constraintBottom_toTopOf="@id/textViewCurrent"
+            app:layout_constraintEnd_toEndOf="@id/textViewObservationTime"
+            app:layout_constraintStart_toStartOf="@id/textViewObservationTime"
+            app:layout_constraintTop_toBottomOf="@id/textViewObservationTime" />
+
+        <TextView
+            android:id="@+id/textViewCurrent"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-light"
+            android:gravity="center"
+            android:paddingStart="@dimen/paddingTextView"
+            android:paddingEnd="@dimen/paddingTextView"
+            android:textAllCaps="true"
+            android:textSize="@dimen/textSizeSecondary"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/textViewObservationTime"
+            app:layout_constraintVertical_bias="0.578"
+            tools:text="Heavy Snow, Blowing Snow, Heavy Rain And Snow" />
+
+        <TextView
+            android:id="@+id/textViewTemperature"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-light"
+            android:gravity="center"
+            android:minWidth="260dp"
+            android:textColor="@android:color/black"
+            android:textSize="80sp"
+            app:layout_constraintEnd_toEndOf="@id/textViewCurrent"
+            app:layout_constraintStart_toStartOf="@id/textViewCurrent"
+            app:layout_constraintTop_toBottomOf="@id/textViewCurrent"
+            tools:text="0.0*c" />
+
+
+        <TextView
+            android:id="@+id/textViewPressure"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-light"
+            android:paddingStart="@dimen/paddingTextView"
+            android:paddingEnd="@dimen/paddingTextView"
+            android:textSize="@dimen/textSizeTertiary"
+            app:layout_constraintBottom_toTopOf="@+id/textViewWindSpeed"
+            app:layout_constraintEnd_toStartOf="@+id/textViewHumidity"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintHorizontal_chainStyle="spread"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewTemperature"
+            app:layout_constraintVertical_chainStyle="packed"
+            tools:text="Prsureввап: 14.0" />
+
+        <TextView
+            android:id="@+id/textViewHumidity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-light"
+            android:paddingStart="@dimen/paddingTextView"
+            android:paddingEnd="@dimen/paddingTextView"
+            android:textSize="@dimen/textSizeTertiary"
+            app:layout_constraintBottom_toTopOf="@+id/textViewCloudCover"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/textViewPressure"
+            app:layout_constraintTop_toBottomOf="@+id/textViewTemperature"
+            app:layout_constraintVertical_chainStyle="packed"
+            tools:text="Obs: 1ввап56 am" />
+
+        <TextView
+            android:id="@+id/textViewWindSpeed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-light"
+            android:paddingStart="@dimen/paddingTextView"
+            android:paddingEnd="@dimen/paddingTextView"
+            android:textSize="@dimen/textSizeTertiary"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/textViewPressure"
+            app:layout_constraintTop_toBottomOf="@+id/textViewPressure"
+            tools:text="Obs: :56 amssssss" />
+
+        <TextView
+            android:id="@+id/textViewCloudCover"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-light"
+            android:paddingStart="@dimen/paddingTextView"
+            android:paddingEnd="@dimen/paddingTextView"
+            android:textSize="@dimen/textSizeTertiary"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/textViewHumidity"
+            app:layout_constraintTop_toBottomOf="@+id/textViewHumidity"
+            tools:text="Obs: 14:56 ваываam" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.swiperefreshlayout.widget.SwipeRefreshLayout>

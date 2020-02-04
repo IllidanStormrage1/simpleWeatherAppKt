@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="textSizePrimary">32sp</dimen>
+    <dimen name="textSizeSecondary">20sp</dimen>
+    <dimen name="paddingTextView">12dp</dimen>
+    <dimen name="textSizeTertiary">16sp</dimen>
+</resources>
