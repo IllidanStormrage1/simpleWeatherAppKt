@@ -5,7 +5,7 @@
     <string name="temperature">%d℃</string>
     <string name="pressure">Pressure: %dMB</string>
     <string name="humidity">Humidity: %d%%</string>
-    <string name="error">It seems that you … , try again later.</string>
+    <string name="error">It seems that you …, try again later.</string>
     <string name="update">OK</string>
     <string name="error_title">Error</string>
     <string name="wind_speed">Wind speed: %dk/h</string>
