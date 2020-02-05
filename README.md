@@ -1,7 +1,7 @@
 # simpleWeatherAppKt
 
 
-<img src="https://github.com/IllidanStormrage1/simpleWeatherAppKt/blob/master/Screenshots/photo_2020-02-04_21-51-47_pixel_really_blue_portrait.png" width="430"/> <img src="https://github.com/IllidanStormrage1/simpleWeatherAppKt/blob/master/Screenshots/photo_3_pixel_really_blue_portrait.png" width="430"/> 
+<img src="https://github.com/IllidanStormrage1/simpleWeatherAppKt/blob/master/Screenshots/pixel_quite_black_portrait.png" width="430"/> <img src="https://github.com/IllidanStormrage1/simpleWeatherAppKt/blob/master/Screenshots/pixel_quite_black_portrait2.png" width="430"/> <img src="https://github.com/IllidanStormrage1/simpleWeatherAppKt/blob/master/Screenshots/pixel_quite_black_portrait3.png" width="430"/>
 
 > Please do not pay attention to the weather icon, this comes from the bekend 😥
 
