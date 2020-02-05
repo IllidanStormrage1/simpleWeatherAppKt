@@ -19,6 +19,7 @@ import com.example.mymoxyktproject.domain.consts.ApplicationConstants.PREF_LAT
 import com.example.mymoxyktproject.domain.consts.ApplicationConstants.PREF_LOCATION
 import com.example.mymoxyktproject.domain.consts.ApplicationConstants.PREF_LONG
 import com.example.mymoxyktproject.domain.consts.ApplicationConstants.REQUEST_CODE
+import com.example.mymoxyktproject.domain.weatherCodeToImage
 import com.example.mymoxyktproject.presentation.presenter.MainPresenter
 import com.google.android.gms.location.*
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
@@ -47,7 +48,7 @@ class MainActivity : MvpAppCompatActivity(), IMainView {
         textViewObservationTime.text =
             resources.getString(R.string.observation_time, data.current.observationTime)
 
-        textViewCurrent.text = data.current.weatherDescriptions[0]
+        textViewCurrent.text = data.current.weatherDescriptions.getOrNull(0)
         textViewTemperature.text =
             resources.getString(R.string.temperature, data.current.temperature)
         textViewPressure.text =
@@ -58,7 +59,8 @@ class MainActivity : MvpAppCompatActivity(), IMainView {
             resources.getString(R.string.wind_speed, data.current.windSpeed)
         textViewCloudCover.text =
             resources.getString(R.string.cloud_cover, data.current.cloudCover)
-        Glide.with(this).load(data.current.weatherIcons[0]).centerCrop().into(imageViewWeatherIcon)
+        Glide.with(this).load(weatherCodeToImage(data.current.weatherCode)).centerCrop()
+            .into(imageViewWeatherIcon)
     }
 
     override fun showProgressBar() = with(swipeRefresh) { isRefreshing = true }

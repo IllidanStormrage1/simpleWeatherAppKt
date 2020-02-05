@@ -27,5 +27,9 @@ data class CurrentWeather(
     val windSpeed: Int,
     @SerializedName("cloudcover")
     @Expose
-    val cloudCover: Int
+    val cloudCover: Int,
+    @SerializedName("weather_code")
+    @Expose
+    val weatherCode: Int
+
 )

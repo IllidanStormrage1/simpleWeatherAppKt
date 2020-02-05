@@ -11,5 +11,4 @@ object MainModel {
         } catch (t: Exception) {
             null
         }
-
 }
