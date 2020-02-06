@@ -12,7 +12,7 @@ This is not supposed to be a production scale application, it is meant to demons
 * Kotlin coroutines
  * gms:play-services-location
 
-##### Still if you have any issues or suggestions, please feel free an write in telegram [@zkv_2](https://t.me/zkv_2)
+##### Still if you have any issues or suggestions, please feel free an create issue 
 
 ### General flow of data
 * Retrieve the latitude and longitude of the user.
