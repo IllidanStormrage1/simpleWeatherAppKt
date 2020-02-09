@@ -1,9 +1,7 @@
 # simpleWeatherAppKt
 
 
-<img src="https://github.com/IllidanStormrage1/simpleWeatherAppKt/blob/master/Screenshots/photo_2020-02-04_21-51-47_pixel_really_blue_portrait.png" width="430"/> <img src="https://github.com/IllidanStormrage1/simpleWeatherAppKt/blob/master/Screenshots/photo_3_pixel_really_blue_portrait.png" width="430"/> 
-
-> Please do not pay attention to the weather icon, this comes from the bekend 😥
+<img src="https://github.com/IllidanStormrage1/simpleWeatherAppKt/blob/master/Screenshots/pixel_quite_black_portrait.png" width="287"/> <img src="https://github.com/IllidanStormrage1/simpleWeatherAppKt/blob/master/Screenshots/pixel_quite_black_portrait2.png" width="287"/> <img src="https://github.com/IllidanStormrage1/simpleWeatherAppKt/blob/master/Screenshots/pixel_quite_black_landscape3.png" width="287"/>
 
 # Overview
 Weather app created using the [Weather Api](https://weatherstack.com/quickstart).
@@ -14,7 +12,7 @@ This is not supposed to be a production scale application, it is meant to demons
 * Kotlin coroutines
  * gms:play-services-location
 
-##### Still if you have any issues or suggestions, please feel free an write in telegram [@zkv_2](https://t.me/zkv_2)
+##### Still if you have any issues or suggestions, please feel free an create issue 
 
 ### General flow of data
 * Retrieve the latitude and longitude of the user.
