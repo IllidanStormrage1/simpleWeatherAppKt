@@ -13,9 +13,6 @@ data class CurrentWeather(
     @SerializedName("weather_descriptions")
     @Expose
     val weatherDescriptions: List<String>,
-    @SerializedName("weather_icons")
-    @Expose
-    val weatherIcons: List<String>,
     @SerializedName("observation_time")
     @Expose
     val observationTime: String,

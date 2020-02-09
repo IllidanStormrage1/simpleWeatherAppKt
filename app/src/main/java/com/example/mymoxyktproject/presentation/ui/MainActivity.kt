@@ -19,7 +19,7 @@ import com.example.mymoxyktproject.domain.consts.ApplicationConstants.PREF_LAT
 import com.example.mymoxyktproject.domain.consts.ApplicationConstants.PREF_LOCATION
 import com.example.mymoxyktproject.domain.consts.ApplicationConstants.PREF_LONG
 import com.example.mymoxyktproject.domain.consts.ApplicationConstants.REQUEST_CODE
-import com.example.mymoxyktproject.domain.weatherCodeToImage
+import com.example.mymoxyktproject.domain.utils.weatherCodeToImage
 import com.example.mymoxyktproject.presentation.presenter.MainPresenter
 import com.google.android.gms.location.*
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
@@ -59,7 +59,11 @@ class MainActivity : MvpAppCompatActivity(), IMainView {
             resources.getString(R.string.wind_speed, data.current.windSpeed)
         textViewCloudCover.text =
             resources.getString(R.string.cloud_cover, data.current.cloudCover)
-        Glide.with(this).load(weatherCodeToImage(data.current.weatherCode)).centerCrop()
+        Glide.with(this).load(
+            weatherCodeToImage(
+                data.current.weatherCode
+            )
+        ).centerCrop()
             .into(imageViewWeatherIcon)
     }
 
